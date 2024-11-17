@@ -47,7 +47,7 @@ Can your password consist of repeated letters?
                 elif repetition==2:
                     print(password((lenght,True)))
                 else:
-                    print("Default=False\n",password(lenght))
+                    raise ValueError
         except:
             print("Please enter a valid number.")
 
