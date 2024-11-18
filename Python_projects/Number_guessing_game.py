@@ -32,7 +32,7 @@ Rules:
     You must enter a valid number as your guess. If you enter something other than a number, the game will prompt you to try again.
     The game continues until you guess the secret number.
           
-powered by Devrim Tunçer
+developed by Devrim Tunçer
 """)
     number_list=list(range(1,101))
     while True:

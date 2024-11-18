@@ -22,7 +22,7 @@ def main():
     print("""
 Welcome to Random Password Generator
 Press 0 to exit
-Powered by Devrim Tunçer""")
+Developed by Devrim Tunçer""")
     while True:
         try:
             lenght=int(input("Enter the desired password length: "))
