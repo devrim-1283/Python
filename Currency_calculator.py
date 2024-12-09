@@ -185,13 +185,13 @@ def conventer(a,b,c):
         for i,j in html["rates"].items():
             for x,y in html["rates"].items():
                 print(f"{c} {i} = {c*j/y} {x}")
-    elif b=="M":
+    elif b=="M" and a!="M":
         for i,j in html["rates"].items():
             if i == a:
                 currency_a=j
         for i,j in html["rates"].items():
             print(f"{c} {a} = {c*currency_a/j} {i}") 
-    elif a == "M":
+    elif a == "M" and b!="M":
         for i,j in html["rates"].items():
             if i == b:
                 currency_b=j
@@ -211,7 +211,7 @@ def main():
         try: 
             exit_value=0
             while True:
-                input_a = input(" Please enter the currency you want to convert from: ")
+                input_a = input("Please enter the currency you want to convert from: ")
                 if input_a.lower()=="q":
                     exit_value+=1
                     break
